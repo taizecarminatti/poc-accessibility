@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class HomeViewController: UIViewController {
     
    
     var arrayProof = ["Outback", "Mercado Livre", "Ayoama"]
@@ -146,7 +146,7 @@ class ViewController: UIViewController {
     
 }
 
-extension ViewController: UITableViewDataSource{
+extension HomeViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arrayProof.count
     }

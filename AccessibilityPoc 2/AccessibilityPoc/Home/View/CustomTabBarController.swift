@@ -28,7 +28,7 @@ class CustomTabBarController: UITabBarController{
         view2.tabBarItem.largeContentSizeImage = UIImage(named: "cartao")
         
         
-        let viewHome = UINavigationController(rootViewController: ViewController())
+        let viewHome = UINavigationController(rootViewController: HomeViewController())
         viewHome.tabBarItem.title = "Home"
         viewHome.tabBarItem.image = UIImage(named: "home")
         viewHome.tabBarItem.largeContentSizeImage = UIImage(named: "home")

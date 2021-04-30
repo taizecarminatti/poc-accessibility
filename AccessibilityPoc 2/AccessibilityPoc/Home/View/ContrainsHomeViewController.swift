@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-extension ViewController {
+extension HomeViewController {
 
 
 func setupContrains(){

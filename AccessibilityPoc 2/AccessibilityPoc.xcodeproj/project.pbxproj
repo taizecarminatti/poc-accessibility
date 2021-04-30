@@ -17,7 +17,7 @@
 		D5A5529A26288A1000D71407 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5A5529826288A1000D71407 /* LaunchScreen.storyboard */; };
 		D5A552A526288A1000D71407 /* AccessibilityPocTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A552A426288A1000D71407 /* AccessibilityPocTests.swift */; };
 		D5A552B026288A1000D71407 /* AccessibilityPocUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A552AF26288A1000D71407 /* AccessibilityPocUITests.swift */; };
-		D5A552D5262A138400D71407 /* Contrains.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A552D4262A138400D71407 /* Contrains.swift */; };
+		D5A552D5262A138400D71407 /* ContrainsHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A552D4262A138400D71407 /* ContrainsHomeViewController.swift */; };
 		D5A552ED262DBDDD00D71407 /* View1Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A552EC262DBDDD00D71407 /* View1Mock.swift */; };
 		D5A552F2262DBE2900D71407 /* View2Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A552F1262DBE2900D71407 /* View2Mock.swift */; };
 		D5A55308262DFE1D00D71407 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A55307262DFE1D00D71407 /* CustomTabBarController.swift */; };
@@ -63,7 +63,7 @@
 		D5A552AB26288A1000D71407 /* AccessibilityPocUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AccessibilityPocUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5A552AF26288A1000D71407 /* AccessibilityPocUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityPocUITests.swift; sourceTree = "<group>"; };
 		D5A552B126288A1000D71407 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D5A552D4262A138400D71407 /* Contrains.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contrains.swift; sourceTree = "<group>"; };
+		D5A552D4262A138400D71407 /* ContrainsHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContrainsHomeViewController.swift; sourceTree = "<group>"; };
 		D5A552EC262DBDDD00D71407 /* View1Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View1Mock.swift; sourceTree = "<group>"; };
 		D5A552F1262DBE2900D71407 /* View2Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View2Mock.swift; sourceTree = "<group>"; };
 		D5A55307262DFE1D00D71407 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
@@ -99,6 +99,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D536B9CE263B94FF0034D553 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D5A552CC2628AD0900D71407 /* View */,
+				D5A552CD2628AD0D00D71407 /* ViewModel */,
+				D5A552CA2628ACE100D71407 /* Model */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		D5A5528126288A0F00D71407 = {
 			isa = PBXGroup;
 			children = (
@@ -124,9 +134,7 @@
 		D5A5528C26288A0F00D71407 /* AccessibilityPoc */ = {
 			isa = PBXGroup;
 			children = (
-				D5A552CA2628ACE100D71407 /* Model */,
-				D5A552CC2628AD0900D71407 /* View */,
-				D5A552CD2628AD0D00D71407 /* ViewModel */,
+				D536B9CE263B94FF0034D553 /* Home */,
 				D5A5528D26288A0F00D71407 /* AppDelegate.swift */,
 				D5A5528F26288A0F00D71407 /* SceneDelegate.swift */,
 				D5A5529626288A1000D71407 /* Assets.xcassets */,
@@ -158,14 +166,15 @@
 			isa = PBXGroup;
 			children = (
 			);
-			path = Model;
+			name = Model;
+			path = ../Model;
 			sourceTree = "<group>";
 		};
 		D5A552CC2628AD0900D71407 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				D5A5529126288A0F00D71407 /* ViewController.swift */,
-				D5A552D4262A138400D71407 /* Contrains.swift */,
+				D5A552D4262A138400D71407 /* ContrainsHomeViewController.swift */,
 				D5A552EC262DBDDD00D71407 /* View1Mock.swift */,
 				D5A552F1262DBE2900D71407 /* View2Mock.swift */,
 				D5A55307262DFE1D00D71407 /* CustomTabBarController.swift */,
@@ -178,7 +187,8 @@
 			isa = PBXGroup;
 			children = (
 			);
-			path = ViewModel;
+			name = ViewModel;
+			path = ../ViewModel;
 			sourceTree = "<group>";
 		};
 		ED8ADA4F14E7C9537B33BE7B /* Frameworks */ = {
@@ -446,7 +456,7 @@
 				D5A5528E26288A0F00D71407 /* AppDelegate.swift in Sources */,
 				D5A552ED262DBDDD00D71407 /* View1Mock.swift in Sources */,
 				D5A5529026288A0F00D71407 /* SceneDelegate.swift in Sources */,
-				D5A552D5262A138400D71407 /* Contrains.swift in Sources */,
+				D5A552D5262A138400D71407 /* ContrainsHomeViewController.swift in Sources */,
 				D5A552F2262DBE2900D71407 /* View2Mock.swift in Sources */,
 				D5C8EBEC263B3AC10084C58B /* CustomAccessibility.swift in Sources */,
 			);
